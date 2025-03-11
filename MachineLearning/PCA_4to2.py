@@ -4,13 +4,13 @@ from sklearn.decomposition import PCA
 from mpl_toolkits.mplot3d import Axes3D  # 3D plotting
 
 # Step 1: Generate 3D sample data
-np.random.seed(42)
+np.random.seed(0)
 mean = [0, 0, 0]
 cov = [[5, 2, 1],
        [2, 3, 0.5],
        [1, 0.5, 2]]
 
-data_3d = np.random.multivariate_normal(mean, cov, 100)
+data_3d = np.random.multivariate_normal(mean, cov, 50)
 
 # Step 2: Fit PCA for 2 components (3D -> 2D)
 pca = PCA(n_components=2)

@@ -1,0 +1,10 @@
+# Python PyCharm project .gitignore file
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.pyc
+*.pyo
+*.pyd
+*.class
